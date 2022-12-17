@@ -1,4 +1,9 @@
 #include "monty.h"
+#include <stdio.h>
+#define _GNU_SOURCE
+#include <stdlib.h>
+
+bus_t bus = {NULL, NULL, NULL, 0};
 
 /**
  * main - monty code interpreter
@@ -8,7 +13,6 @@
  */
 int main(int argc, char *argv[])
 {
-	bus_t bus = {NULL, NULL, NULL, 0};
 	char *content;
 	FILE *file;
 	size_t size = 0;
